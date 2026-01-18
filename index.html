@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>High-End Website Studio</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@600;700&display=swap"
+        rel="stylesheet">
+
+
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+  tailwind.config = {
+    theme: {
+      extend: {
+
+        fontFamily: {
+          heading: ['"Plus Jakarta Sans"', 'sans-serif'],
+          body: ['Inter', 'sans-serif']
+        },
+
+        colors: {
+          base: '#0a0e17',
+          glass: 'rgba(255,255,255,0.08)',
+          accent: '#6366f1'
+        },
+
+        animation: {
+          float: 'float 7s ease-in-out infinite',
+          glow: 'glow 4s ease-in-out infinite',
+          offerFloat: 'offerFloat 6s ease-in-out infinite'
+        },
+
+        keyframes: {
+          float: {
+            '0%, 100%': { transform: 'translateY(0)' },
+            '50%': { transform: 'translateY(-14px)' }
+          },
+          glow: {
+            '0%, 100%': { boxShadow: '0 0 40px rgba(99,102,241,0.15)' },
+            '50%': { boxShadow: '0 0 70px rgba(99,102,241,0.35)' }
+          },
+          offerFloat: {
+            '0%, 100%': { transform: 'translateY(0)' },
+            '50%': { transform: 'translateY(-10px)' }
+          }
+        }
+
+      }
+    }
+  }
+</script>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-base text-white font-body overflow-x-hidden">
+    <!-- ================= HEADER ================= -->
+    <header class="fixed top-0 inset-x-0 z-50">
+        <div class="mx-auto max-w-7xl px-6">
+            <div
+                class="mt-4 flex items-center justify-between rounded-2xl bg-glass backdrop-blur-xl border border-white/10 px-6 py-4">
+
+                <!-- Logo -->
+                <a href="#" class="font-heading text-lg tracking-tight">
+                    High-End<span class="text-accent">.</span>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center gap-8 text-sm text-gray-300">
+                    <a href="#work" class="hover:text-white transition">Work</a>
+                    <a href="#process" class="block text-gray-300 hover:text-white">Process</a>
+                    <a href="#pricing" class="block text-gray-300 hover:text-white">Pricing</a>
+
+                    <a href="#contact" class="hover:text-white transition">Contact</a>
+                    <a href="#contact" class="px-5 py-2 rounded-xl bg-accent text-white hover:bg-indigo-500 transition">
+                        Let’s Talk
+                    </a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="menuBtn"
+                    class="md:hidden inline-flex items-center justify-center rounded-xl border border-white/20 p-2 hover:bg-white/10 transition"
+                    aria-label="Open menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="pointer-events-none opacity-0 translate-y-4 transition-all duration-300 md:hidden">
+            <div class="mx-auto mt-4 max-w-7xl px-6">
+                <div class="rounded-2xl bg-glass backdrop-blur-xl border border-white/10 p-6 space-y-4">
+                    <a href="#work" class="block text-gray-300 hover:text-white">Work</a>
+                    <a href="#process" class="block text-gray-300 hover:text-white">Process</a>
+                    <a href="#pricing" class="block text-gray-300 hover:text-white">Pricing</a>
+
+                    <a href="#contact" class="block text-gray-300 hover:text-white">Contact</a>
+                    <a href="#contact"
+                        class="block text-center px-5 py-3 rounded-xl bg-accent hover:bg-indigo-500 transition">
+                        Let’s Talk
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+    <section class="relative min-h-screen flex items-center px-6 pt-20">
+        <div class="absolute inset-0 bg-gradient-to-br from-indigo-600/20 via-transparent to-purple-600/20 blur-3xl">
+        </div>
+
+        <div class="relative max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+            <div data-aos="fade-right">
+                <h1 class="font-heading text-5xl md:text-6xl leading-tight">
+                    I Build Websites That
+                    <span class="block bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+                        Sell For You 24/7
+                    </span>
+                </h1>
+                <p class="mt-4 text-accent font-medium text-lg">
+                    Business websites delivered in 7 days for local and growing companies
+                </p>
+
+
+                <p class="mt-6 text-gray-400 max-w-xl">
+                    High-end, conversion-focused websites for founders, startups, and businesses that care about speed,
+                    clarity, and results.
+                </p>
+
+                <div class="mt-10 flex flex-wrap gap-4">
+                    <a href="#contact"
+                        class="px-8 py-4 rounded-xl bg-accent hover:bg-indigo-500 transition animate-glow">
+                        Start a Conversation
+                    </a>
+                    <a href="#work" class="px-8 py-4 rounded-xl border border-white/20 hover:bg-white/10 transition">
+                        View Work
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative animate-float" data-aos="fade-left">
+                <div class="bg-glass backdrop-blur-xl rounded-3xl p-4 border border-white/10 shadow-2xl">
+                    <img src="./7570211.jpg" class="rounded-2xl object-cover" alt="Device Mockup" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= WORK ================= -->
+    <section id="work" class="relative py-32 px-6 max-w-7xl mx-auto overflow-hidden">
+
+        <!-- ambient background -->
+        <!-- <div
+            class="absolute inset-0 bg-gradient-to-br from-indigo-600/10 via-transparent to-purple-600/10 blur-3xl pointer-events-none">
+        </div> -->
+
+        <div class="relative">
+            <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-20">
+                <h2 class="font-heading text-4xl" data-aos="fade-up">
+                    Sample Work
+                </h2>
+                <p class="mt-6 md:mt-0 text-gray-400 max-w-md" data-aos="fade-up" data-aos-delay="100">
+                    A few Sample projects where design and performance worked together.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-10">
+
+                <!-- CASE 1 -->
+                <div class="group relative bg-glass backdrop-blur-xl border border-white/10 rounded-3xl overflow-hidden
+               transition-all duration-500 ease-out
+               hover:-translate-y-3 hover:shadow-[0_40px_90px_rgba(99,102,241,0.35)]" data-aos="fade-up">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="./ec.jpg"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    </div>
+
+                    <div class="p-8 space-y-4">
+                        <span class="text-xs uppercase tracking-widest text-accent">
+                            E-commerce
+                        </span>
+
+                        <p class="font-heading text-xl">
+                            Scalable Storefront Redesign
+                        </p>
+
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Improved product discovery and checkout flow for measurable revenue growth.
+                        </p>
+
+                        <div class="flex items-center justify-between pt-4 border-t border-white/10">
+                            <span class="text-sm text-gray-300">+200% Growth</span>
+                            <span class="text-sm text-gray-500 group-hover:text-white transition">
+                                View Case →
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CASE 2 -->
+                <div class="group relative bg-glass backdrop-blur-xl border border-white/10 rounded-3xl overflow-hidden
+               transition-all duration-500 ease-out
+               hover:-translate-y-3 hover:shadow-[0_40px_90px_rgba(99,102,241,0.35)]" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="./lp.jpg"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    </div>
+
+                    <div class="p-8 space-y-4">
+                        <span class="text-xs uppercase tracking-widest text-accent">
+                            SaaS
+                        </span>
+
+                        <p class="font-heading text-xl">
+                            High-Conversion Landing Page
+                        </p>
+
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Clear messaging and structured sections that guide users to action.
+                        </p>
+
+                        <div class="flex items-center justify-between pt-4 border-t border-white/10">
+                            <span class="text-sm text-gray-300">3× Conversion Rate</span>
+                            <span class="text-sm text-gray-500 group-hover:text-white transition">
+                                View Case →
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CASE 3 -->
+                <div class="group relative bg-glass backdrop-blur-xl border border-white/10 rounded-3xl overflow-hidden
+               transition-all duration-500 ease-out
+               hover:-translate-y-3 hover:shadow-[0_40px_90px_rgba(99,102,241,0.35)]" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="./bw.jpg"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    </div>
+
+                    <div class="p-8 space-y-4">
+                        <span class="text-xs uppercase tracking-widest text-accent">
+                            Brand
+                        </span>
+
+                        <p class="font-heading text-xl">
+                            Premium Brand Website
+                        </p>
+
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            A refined online presence that communicates trust and quality.
+                        </p>
+
+                        <div class="flex items-center justify-between pt-4 border-t border-white/10">
+                            <span class="text-sm text-gray-300">Premium Positioning</span>
+                            <span class="text-sm text-gray-500 group-hover:text-white transition">
+                                View Case →
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ================= SECTION DIVIDER ================= -->
+    <div class="relative my-24">
+        <div class="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+    </div>
+
+
+
+
+    <!-- ================= WHY ME ================= -->
+    <section class="relative py-32 px-6 max-w-6xl mx-auto overflow-hidden">
+
+        <!-- ambient background glow -->
+        <!-- <div
+            class="absolute inset-0 bg-gradient-to-br from-indigo-600/10 via-transparent to-purple-600/10 blur-3xl pointer-events-none">
+        </div> -->
+
+        <div class="relative">
+            <h2 class="font-heading text-4xl mb-20 text-center" data-aos="fade-up">
+                Why Work With Me
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-12">
+
+                <!-- Card 1 -->
+                <div class="group relative bg-glass backdrop-blur-xl border border-white/10 rounded-3xl p-12
+       transition-all duration-500 ease-out
+       hover:-translate-y-3 hover:shadow-[0_30px_80px_rgba(99,102,241,0.35)]" data-aos="fade-up">
+
+                    <div class="absolute -top-6 left-12 w-16 h-16 bg-accent/20 blur-2xl
+                group-hover:scale-150 transition"></div>
+
+                    <p class="font-heading text-2xl mb-2">
+                        Business-First Thinking
+                    </p>
+
+                    <p class="text-accent text-sm mb-4">
+                        Strategy before aesthetics
+                    </p>
+
+                    <p class="text-gray-300 text-base leading-relaxed">
+                        I design websites around real business goals — lead generation,
+                        clarity of messaging, and guiding visitors toward meaningful actions
+                        that move your business forward.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group relative bg-glass backdrop-blur-xl border border-white/10 rounded-3xl p-12
+       transition-all duration-500 ease-out
+       hover:-translate-y-3 hover:shadow-[0_30px_80px_rgba(99,102,241,0.35)]" data-aos="fade-up" data-aos-delay="100">
+
+                    <div class="absolute -top-6 left-12 w-16 h-16 bg-accent/20 blur-2xl
+                group-hover:scale-150 transition"></div>
+
+                    <p class="font-heading text-2xl mb-2">
+                        Performance & Clarity
+                    </p>
+
+                    <p class="text-accent text-sm mb-4">
+                        Fast, focused, and distraction-free
+                    </p>
+
+                    <p class="text-gray-300 text-base leading-relaxed">
+                        Every site is built with speed, responsiveness, and readability
+                        in mind — so users stay engaged and your brand feels polished
+                        across all devices.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group relative bg-glass backdrop-blur-xl border border-white/10 rounded-3xl p-12
+       transition-all duration-500 ease-out
+       hover:-translate-y-3 hover:shadow-[0_30px_80px_rgba(99,102,241,0.35)]" data-aos="fade-up" data-aos-delay="200">
+
+                    <div class="absolute -top-6 left-12 w-16 h-16 bg-accent/20 blur-2xl
+                group-hover:scale-150 transition"></div>
+
+                    <p class="font-heading text-2xl mb-2">
+                        Direct Communication
+                    </p>
+
+                    <p class="text-accent text-sm mb-4">
+                        No layers, no delays
+                    </p>
+
+                    <p class="text-gray-300 text-base leading-relaxed">
+                        You work directly with the person designing and building your site,
+                        ensuring faster decisions, clearer feedback, and a smoother
+                        overall experience.
+                    </p>
+                </div>
+
+            </div>
+
+
+        </div>
+        </div>
+    </section>
+
+
+    <!-- ================= SECTION DIVIDER ================= -->
+    <div class="relative my-24">
+        <div class="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+    </div>
+
+
+
+
+
+    <!-- ================= HOW IT WORKS ================= -->
+    <section id="process" class="relative py-32 px-6 max-w-6xl mx-auto overflow-hidden">
+
+        <!-- ambient background -->
+        <div style="opacity: 40%;"
+            class="absolute inset-0 bg-gradient-to-br from-indigo-600/10 via-transparent to-purple-600/10 blur-3xl pointer-events-none">
+        </div>
+
+        <div class="relative">
+
+            <!-- Section Heading -->
+            <h2 class="font-heading text-4xl mb-6 text-center" data-aos="fade-up">
+                How It Works
+            </h2>
+            <p class="text-gray-400 text-center max-w-2xl mx-auto mb-24" data-aos="fade-up" data-aos-delay="100">
+                A clear, structured process designed to move quickly without
+                sacrificing quality or clarity.
+            </p>
+
+            <!-- timeline line (desktop only) -->
+            <div class="hidden md:block absolute top-[190px] left-1/2 -translate-x-1/2 h-[520px] w-px
+             bg-gradient-to-b from-transparent via-white/20 to-transparent">
+            </div>
+
+            <!-- Steps -->
+            <div class="grid md:grid-cols-4 gap-14 relative">
+
+                <!-- STEP 1 -->
+                <div class="group relative bg-glass backdrop-blur-xl border border-white/10
+                  rounded-3xl p-12
+                  transition-all duration-500 ease-out
+                  hover:-translate-y-3 hover:shadow-[0_30px_80px_rgba(99,102,241,0.35)]" data-aos="fade-up">
+
+                    <div class="absolute -top-6 left-12 w-16 h-16 rounded-full
+                 bg-accent/20 blur-2xl group-hover:scale-150 transition">
+                    </div>
+
+                    <div class="flex items-center gap-4 mb-8">
+                        <span class="text-accent font-heading text-sm tracking-widest">01</span>
+                        <span class="h-px flex-1 bg-white/10"></span>
+                    </div>
+
+                    <p class="font-heading text-2xl mb-2">
+                        Discovery
+                    </p>
+
+                    <p class="text-accent text-sm mb-4">
+                        Understanding your business first
+                    </p>
+
+                    <p class="text-gray-300 text-base leading-relaxed">
+                        We discuss your goals, audience, and expectations to make sure
+                        the website supports real business outcomes — not just visuals.
+                    </p>
+                </div>
+
+                <!-- STEP 2 -->
+                <div class="group relative bg-glass backdrop-blur-xl border border-white/10
+                  rounded-3xl p-12
+                  transition-all duration-500 ease-out
+                  hover:-translate-y-3 hover:shadow-[0_30px_80px_rgba(99,102,241,0.35)]" data-aos="fade-up"
+                    data-aos-delay="100">
+
+                    <div class="absolute -top-6 left-12 w-16 h-16 rounded-full
+                 bg-accent/20 blur-2xl group-hover:scale-150 transition">
+                    </div>
+
+                    <div class="flex items-center gap-4 mb-8">
+                        <span class="text-accent font-heading text-sm tracking-widest">02</span>
+                        <span class="h-px flex-1 bg-white/10"></span>
+                    </div>
+
+                    <p class="font-heading text-2xl mb-2">
+                        Design
+                    </p>
+
+                    <p class="text-accent text-sm mb-4">
+                        Clear, focused, conversion-driven
+                    </p>
+
+                    <p class="text-gray-300 text-base leading-relaxed">
+                        Layouts and visuals are designed with clarity and usability in mind,
+                        guiding visitors naturally toward contact or action.
+                    </p>
+                </div>
+
+                <!-- STEP 3 -->
+                <div class="group relative bg-glass backdrop-blur-xl border border-white/10
+                  rounded-3xl p-12
+                  transition-all duration-500 ease-out
+                  hover:-translate-y-3 hover:shadow-[0_30px_80px_rgba(99,102,241,0.35)]" data-aos="fade-up"
+                    data-aos-delay="200">
+
+                    <div class="absolute -top-6 left-12 w-16 h-16 rounded-full
+                 bg-accent/20 blur-2xl group-hover:scale-150 transition">
+                    </div>
+
+                    <div class="flex items-center gap-4 mb-8">
+                        <span class="text-accent font-heading text-sm tracking-widest">03</span>
+                        <span class="h-px flex-1 bg-white/10"></span>
+                    </div>
+
+                    <p class="font-heading text-2xl mb-2">
+                        Development
+                    </p>
+
+                    <p class="text-accent text-sm mb-4">
+                        Fast, scalable, and reliable
+                    </p>
+
+                    <p class="text-gray-300 text-base leading-relaxed">
+                        The design is built into a fast, responsive website with clean
+                        structure, performance optimization, and modern best practices.
+                    </p>
+                </div>
+
+                <!-- STEP 4 -->
+                <div class="group relative bg-glass backdrop-blur-xl border border-white/10
+                  rounded-3xl p-12
+                  transition-all duration-500 ease-out
+                  hover:-translate-y-3 hover:shadow-[0_30px_80px_rgba(99,102,241,0.35)]" data-aos="fade-up"
+                    data-aos-delay="300">
+
+                    <div class="absolute -top-6 left-12 w-16 h-16 rounded-full
+                 bg-accent/20 blur-2xl group-hover:scale-150 transition">
+                    </div>
+
+                    <div class="flex items-center gap-4 mb-8">
+                        <span class="text-accent font-heading text-sm tracking-widest">04</span>
+                        <span class="h-px flex-1 bg-white/10"></span>
+                    </div>
+
+                    <p class="font-heading text-2xl mb-2">
+                        Launch & Support
+                    </p>
+
+                    <p class="text-accent text-sm mb-4">
+                        Ready to use from day one
+                    </p>
+
+                    <p class="text-gray-300 text-base leading-relaxed">
+                        Your website is deployed, tested, and ready to share with customers,
+                        with optional support for updates and improvements.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= SECTION DIVIDER ================= -->
+    <div class="relative my-24">
+        <div class="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+    </div>
+
+
+
+
+
+
+    <!-- ================= PRICING ================= -->
+    <section id="pricing" class="relative py-32 px-6 max-w-7xl mx-auto overflow-hidden">
+
+        <!-- <div
+            class="absolute inset-0 bg-gradient-to-br from-indigo-600/10 via-transparent to-purple-600/10 blur-3xl pointer-events-none">
+        </div> -->
+
+        <div class="relative">
+            <h2 class="font-heading text-4xl mb-6 text-center" data-aos="fade-up">
+                Pricing & Engagement
+            </h2>
+            <p class="text-accent text-center text-sm mb-6">
+                Most business websites fall between ₹15,000 – ₹60,000 depending on scope
+            </p>
+
+            <p class="text-gray-400 text-center max-w-2xl mx-auto mb-20" data-aos="fade-up" data-aos-delay="100">
+                Transparent starting points. Final pricing depends on scope, features, and complexity.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-10">
+
+                <!-- Starter -->
+                <div class="bg-glass backdrop-blur-xl border border-white/10 rounded-3xl p-10" data-aos="fade-up">
+                    <p class="font-heading text-xl mb-2">Starter</p>
+                    <p class="text-3xl font-heading mb-6">₹15,000+</p>
+
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li>• Landing page or small website</li>
+                        <li>• Mobile-responsive design</li>
+                        <li>• Clean UI & fast performance</li>
+                        <li>• Basic SEO structure</li>
+                    </ul>
+                </div>
+
+                <!-- Professional -->
+                <div class="relative bg-glass backdrop-blur-xl border border-accent/50 rounded-3xl p-10
+                  shadow-[0_40px_100px_rgba(99,102,241,0.35)]" data-aos="fade-up" data-aos-delay="100">
+                    <span class="absolute -top-4 right-6 text-xs bg-accent px-4 py-1 rounded-full">
+                        Most Popular
+                    </span>
+
+                    <p class="font-heading text-xl mb-2">Professional</p>
+                    <p class="text-3xl font-heading mb-6">₹50,000+</p>
+
+                    <ul class="space-y-3 text-gray-300 text-sm">
+                        <li>• Multi-section marketing website</li>
+                        <li>• Conversion-focused UX</li>
+                        <li>• Animations & micro-interactions</li>
+                        <li>• Performance & SEO optimization</li>
+                    </ul>
+                </div>
+
+                <!-- Custom -->
+                <div class="bg-glass backdrop-blur-xl border border-white/10 rounded-3xl p-10" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <p class="font-heading text-xl mb-2">Custom / Scale</p>
+                    <p class="text-3xl font-heading mb-6">Custom Quote</p>
+
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li>• SaaS, dashboards, or platforms</li>
+                        <li>• Custom architecture</li>
+                        <li>• Long-term collaboration</li>
+                        <li>• Advanced integrations</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ================= SECTION DIVIDER ================= -->
+    <div class="relative my-24">
+        <div class="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+    </div>
+
+
+
+
+
+    <!-- ================= ABOUT ================= -->
+    <section class="relative py-32 px-6 max-w-6xl mx-auto overflow-hidden">
+
+        <!-- ambient background -->
+        <!-- <div style="border-radius: 20px;"
+    class="absolute inset-0 bg-gradient-to-br from-indigo-600/10 via-transparent to-purple-600/10 blur-3xl pointer-events-none">
+  </div> -->
+
+        <div class="relative grid md:grid-cols-2 gap-16 items-center">
+
+            <!-- Text -->
+            <div data-aos="fade-right">
+                <h2 class="font-heading text-4xl mb-6">
+                    About Me
+                </h2>
+
+                <p class="text-gray-400 leading-relaxed mb-6">
+                    I’m a web developer and designer focused on building websites that
+                    do more than look good — they help businesses communicate clearly,
+                    build trust, and convert visitors into real inquiries.
+                </p>
+
+                <p class="text-gray-400 leading-relaxed mb-6">
+                    I work directly with founders and business owners who want a
+                    professional online presence without long timelines, bloated agencies,
+                    or technical confusion.
+                </p>
+
+                <p class="text-gray-400 leading-relaxed">
+                    My approach is simple: understand your business goals, design with
+                    intent, build with performance in mind, and deliver something you can
+                    confidently share with customers.
+                </p>
+            </div>
+
+
+            <!-- Trust Card -->
+            <div data-aos="fade-left">
+                <div class="bg-glass backdrop-blur-xl border border-white/10 rounded-3xl p-10
+               shadow-[0_30px_80px_rgba(99,102,241,0.25)]">
+
+                    <p class="font-heading text-xl mb-6">
+                        How I Work
+                    </p>
+
+                    <ul class="space-y-4 text-gray-400 text-sm">
+                        <li>• Direct communication — no middle layers</li>
+                        <li>• Clear timelines and expectations</li>
+                        <li>• Focus on speed, clarity, and conversion</li>
+                        <li>• Built to scale as your business grows</li>
+                    </ul>
+
+                    <div class="mt-8 pt-6 border-t border-white/10 text-sm text-gray-500">
+                        If we work together, you’ll always know what’s happening
+                        and why it matters.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- LinkedIn Button -->
+        <div class="mt-10">
+            <a href="https://www.linkedin.com/in/mdehteshamansari" target="_blank" rel="noopener" class="inline-flex items-center gap-3 px-6 py-3 rounded-xl
+        border border-white/15 bg-black/30
+        hover:bg-black/50 transition">
+
+                <i data-lucide="linkedin" class="text-accent"></i>
+
+                <span class="text-sm text-gray-300">
+                    View LinkedIn Profile
+                </span>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- ================= SECTION DIVIDER ================= -->
+    <div class="relative my-24">
+        <div class="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+    </div>
+
+
+
+
+
+
+
+    <!-- ================= CONTACT ================= -->
+
+
+    <section id="contact" class="py-28 px-6 max-w-5xl mx-auto">
+
+        <div class="bg-glass backdrop-blur-2xl border border-white/10 rounded-3xl p-12 shadow-2xl" data-aos="fade-up">
+            <h2 class="font-heading text-4xl mb-6">
+                Let’s Talk
+            </h2>
+            <p class="text-sm text-gray-500 mt-4">
+                If you’re unsure, a 10-minute conversation is enough to decide.
+            </p>
+            <p class="text-gray-400 max-w-xl mb-10">
+                No forms. No friction. Reach me directly and we’ll see if we’re a good fit.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <a href="https://wa.me/916260997976?text=Hello%2C%20I%20want%20you%20to%20create%20a%20website%20for%20me." target="_blank"
+                    class="flex items-center gap-4 p-6 rounded-2xl bg-black/30 hover:bg-black/50 transition">
+                    <i data-lucide="message-circle"></i>
+                    <div>
+                        <p class="font-heading">WhatsApp</p>
+                        <p class="text-sm text-gray-400">Fastest response</p>
+                    </div>
+                </a>
+
+                <a href="tel:+916260997976"
+                    class="flex items-center gap-4 p-6 rounded-2xl bg-black/30 hover:bg-black/50 transition">
+                    <i data-lucide="phone"></i>
+                    <div>
+                        <p class="font-heading">Phone Call</p>
+                        <p class="text-sm text-gray-400">Direct discussion</p>
+                    </div>
+                </a>
+
+                <a href="mailto:ehteshamansariadn@gmail.com"
+                    class="flex items-center gap-4 p-6 rounded-2xl bg-black/30 hover:bg-black/50 transition">
+                    <i data-lucide="mail"></i>
+                    <div>
+                        <p class="font-heading">Email</p>
+                        <p class="text-sm text-gray-400">Detailed inquiries</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SECTION DIVIDER ================= -->
+    <div class="relative my-24">
+        <div class="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+    </div>
+
+
+
+    <!-- ================= FAQ ================= -->
+    <section class="relative py-32 px-6 max-w-5xl mx-auto overflow-hidden">
+
+        <!-- ambient background glow -->
+        <!-- <div
+        class="absolute inset-0 bg-gradient-to-br from-indigo-600/10 via-transparent to-purple-600/10 blur-3xl pointer-events-none">
+    </div> -->
+
+        <div class="relative">
+            <h2 class="font-heading text-4xl mb-20 text-center" data-aos="fade-up">
+                Common Questions
+            </h2>
+
+            <div class="space-y-6">
+
+                <!-- FAQ 1 -->
+                <div class="group bg-glass backdrop-blur-xl border border-white/10 rounded-2xl p-8
+               transition-all duration-500 ease-out
+               hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(99,102,241,0.25)]" data-aos="fade-up">
+                    <div class="flex items-start justify-between gap-6">
+                        <p class="font-heading text-lg text-white">
+                            How long does a project usually take?
+                        </p>
+                        <span class="text-accent text-sm group-hover:rotate-90 transition-transform">
+                            +
+                        </span>
+                    </div>
+
+                    <p class="mt-4 text-sm text-gray-400 leading-relaxed max-w-3xl">
+                        Most projects take between 2–4 weeks depending on scope, content readiness, and feedback cycles.
+                    </p>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="group bg-glass backdrop-blur-xl border border-white/10 rounded-2xl p-8
+                transition-all duration-500 ease-out
+               hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(99,102,241,0.25)]" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="flex items-start justify-between gap-6">
+                        <p class="font-heading text-lg text-white">
+                            Do you work with international clients?
+                        </p>
+                        <span class="text-accent text-sm group-hover:rotate-90 transition-transform">
+                            +
+                        </span>
+                    </div>
+
+                    <p class="mt-4 text-sm text-gray-400 leading-relaxed max-w-3xl">
+                        Yes. I regularly work with international clients and communicate via WhatsApp, email, or calls.
+                    </p>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="group bg-glass backdrop-blur-xl border border-white/10 rounded-2xl p-8
+               transition-all duration-500 ease-out
+               hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(99,102,241,0.25)]" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="flex items-start justify-between gap-6">
+                        <p class="font-heading text-lg text-white">
+                            Is ongoing support available?
+                        </p>
+                        <span class="text-accent text-sm group-hover:rotate-90 transition-transform">
+                            +
+                        </span>
+                    </div>
+
+                    <p class="mt-4 text-sm text-gray-400 leading-relaxed max-w-3xl">
+                        Ongoing updates, improvements, and maintenance can be arranged based on your needs.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <section class="py-20 px-6 max-w-5xl mx-auto">
+  <div class="bg-glass backdrop-blur-xl border border-white/10 rounded-3xl p-10">
+    <h3 class="font-heading text-2xl mb-6">This Is For You If</h3>
+    <ul class="grid md:grid-cols-2 gap-4 text-gray-400 text-sm">
+      <li>• You run a business and need a professional website fast</li>
+      <li>• Your current site looks outdated or doesn’t convert</li>
+      <li>• You don’t want to deal with technical complexity</li>
+      <li>• You want clarity, speed, and direct communication</li>
+    </ul>
+  </div>
+</section> -->
+
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="relative mt-32 border-t border-white/10 overflow-hidden">
+
+        <!-- subtle ambient glow -->
+        <div
+            class="absolute inset-0 bg-gradient-to-br from-indigo-600/10 via-transparent to-purple-600/10 blur-3xl pointer-events-none">
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-6 py-20">
+
+            <!-- top row -->
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-10">
+
+                <!-- brand -->
+                <div>
+                    <p class="font-heading text-lg tracking-tight">
+                        High-End<span class="text-accent">.</span>
+                    </p>
+                    <p class="mt-2 text-sm text-gray-400 max-w-xs">
+                        Designing and building high-performance websites that convert attention into action.
+                    </p>
+                </div>
+
+                <!-- navigation -->
+                <nav class="flex gap-8 text-sm text-gray-400">
+                    <a href="#work" class="hover:text-white transition">Work</a>
+                    <a href="#contact" class="hover:text-white transition">Contact</a>
+                    <a href="#top" class="hover:text-white transition">Back to top</a>
+                </nav>
+
+            </div>
+
+            <!-- divider -->
+            <div class="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent my-14"></div>
+
+            <!-- bottom row -->
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-gray-500">
+
+                <p>
+                    © 2026 High-End Web Studio. All rights reserved.
+                </p>
+
+                <p class="text-gray-600">
+                    Built with clarity, speed, and intent.
+                </p>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- ================= FLOATING CONTACT STACK ================= -->
+    <div class="fixed right-6 top-[30%] z-50 flex flex-col gap-4">
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/916260997976?text=Hello%2C%20I%20want%20you%20to%20create%20a%20website%20for%20me." target="_blank" rel="noopener" aria-label="Chat on WhatsApp" class="group">
+            <div class="w-14 h-14 rounded-full bg-[#25D366]
+             flex items-center justify-center
+             shadow-[0_20px_50px_rgba(37,211,102,0.45)]
+             transition hover:scale-110">
+
+                <!-- WhatsApp SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-7 h-7 fill-white">
+                    <path d="M16 .5C7.4.5.5 7.4.5 16c0 2.8.7 5.5 2.1 7.9L.3 31.5l7.8-2.1c2.3 1.2 4.9 1.8 7.6 1.8
+        8.6 0 15.5-6.9 15.5-15.5C31.5 7.4 24.6.5 16 .5zM16 28c-2.4 0-4.7-.6-6.8-1.9l-.5-.3-4.6 1.2
+        1.2-4.5-.3-.5C3.6 19.9 3 18 3 16 3 9 9 3 16 3s13 6 13 13-6 12-13 12zm7.2-8.6c-.4-.2-2.3-1.1-2.7-1.3
+        -.4-.2-.7-.2-1 .2-.3.4-1.1 1.3-1.3 1.6-.2.3-.5.4-.9.2-.4-.2-1.8-.7-3.4-2.1-1.3-1.2-2.1-2.6-2.4-3
+        -.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.3-.4.5-.7.2-.3.1-.5 0-.7-.1-.2-1-.2-1.3-.2-.3 0-.7.1-.9.4
+        -.3.4-1.1 1.1-1.1 2.7 0 1.6 1.2 3.2 1.4 3.4.2.2 2.3 3.5 5.6 4.9.8.3 1.4.5 1.9.6.8.2 1.5.2 2.1.1
+        .6-.1 2.3-.9 2.6-1.8.3-.9.3-1.6.2-1.8-.1-.2-.4-.3-.8-.5z" />
+                </svg>
+            </div>
+        </a>
+
+        <!-- Phone -->
+        <a href="tel:+916260997976" aria-label="Call now">
+            <div class="w-14 h-14 rounded-full bg-glass backdrop-blur-xl
+             border border-white/15
+             flex items-center justify-center
+             transition hover:scale-110">
+
+                <!-- Phone SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6 fill-indigo-400">
+                    <path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3
+        1.2.4 2.5.6 3.9.6.6 0 1 .4 1 1V21c0 .6-.4 1-1 1C10.1 22 2
+        13.9 2 3c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6
+        3.9.1.4 0 .8-.3 1.1L6.6 10.8z" />
+                </svg>
+            </div>
+        </a>
+
+        <!-- Email -->
+        <a href="mailto:ehteshamansariadn@gmail.com" aria-label="Send email">
+            <div class="w-14 h-14 rounded-full bg-glass backdrop-blur-xl
+             border border-white/15
+             flex items-center justify-center
+             transition hover:scale-110">
+
+                <!-- Mail SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6 fill-indigo-400">
+                    <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2
+        2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6
+        l8 5 8-5v2z" />
+                </svg>
+            </div>
+        </a>
+
+    </div>
+
+
+
+    <!-- ================= WHATSAPP OFFER POPUP ================= -->
+    <div id="offerPopup"
+        class="fixed inset-0 z-[999] hidden items-center justify-center bg-black/60 backdrop-blur-sm px-6">
+
+        <div class="relative w-full max-w-lg bg-glass backdrop-blur-2xl
+           border border-white/10 rounded-3xl p-10
+           shadow-[0_40px_120px_rgba(0,0,0,0.6)]">
+
+            <!-- Close Button -->
+            <button id="closePopup" aria-label="Close"
+                class="absolute top-4 right-4 text-gray-400 hover:text-white transition">
+                ✕
+            </button>
+
+            <!-- Content -->
+            <p class="text-accent text-sm tracking-widest uppercase mb-3">
+                Limited-Time Offer
+            </p>
+
+            <h3 class="font-heading text-3xl mb-4">
+                Get <span class="text-accent">30% Off</span> On your Website
+            </h3>
+
+            <p class="text-gray-300 leading-relaxed mb-6">
+                Contact me on WhatsApp <strong>before January 21</strong> and receive
+                an exclusive <strong>30% discount</strong> on your website project.
+            </p>
+
+            <p class="text-sm text-gray-500 mb-8">
+                No forms. No pressure. Just a quick conversation.
+            </p>
+
+            <!-- CTA -->
+            <a href="https://wa.me/916260997976?text=Hello%2C%20I%20want%20you%20to%20create%20a%20website%20for%20me." target="_blank" rel="noopener" class="flex items-center justify-center gap-3
+              w-full px-8 py-4 rounded-xl
+              bg-[#25D366] hover:bg-[#1ebe5b]
+              text-white font-semibold
+              shadow-[0_20px_50px_rgba(37,211,102,0.45)]
+              transition hover:scale-[1.02]">
+
+                <!-- WhatsApp SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-6 h-6 fill-white">
+                    <path d="M16 .5C7.4.5.5 7.4.5 16c0 2.8.7 5.5 2.1 7.9L.3 31.5l7.8-2.1c2.3 1.2 4.9 1.8 7.6 1.8
+        8.6 0 15.5-6.9 15.5-15.5C31.5 7.4 24.6.5 16 .5zM16 28c-2.4 0-4.7-.6-6.8-1.9l-.5-.3-4.6 1.2
+        1.2-4.5-.3-.5C3.6 19.9 3 18 3 16 3 9 9 3 16 3s13 6 13 13-6 12-13 12zm7.2-8.6c-.4-.2-2.3-1.1-2.7-1.3
+        -.4-.2-.7-.2-1 .2-.3.4-1.1 1.3-1.3 1.6-.2.3-.5.4-.9.2-.4-.2-1.8-.7-3.4-2.1-1.3-1.2-2.1-2.6-2.4-3
+        -.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.3-.4.5-.7.2-.3.1-.5 0-.7-.1-.2-1-.2-1.3-.2-.3 0-.7.1-.9.4
+        -.3.4-1.1 1.1-1.1 2.7 0 1.6 1.2 3.2 1.4 3.4.2.2 2.3 3.5 5.6 4.9.8.3 1.4.5 1.9.6.8.2 1.5.2 2.1.1
+        .6-.1 2.3-.9 2.6-1.8.3-.9.3-1.6.2-1.8-.1-.2-.4-.3-.8-.5z" />
+                </svg>
+
+                Chat on WhatsApp
+            </a>
+
+        </div>
+    </div>
+
+<!-- ================= FLOATING OFFER BUTTON ================= -->
+<button id="openOfferPopup"
+        aria-label="Limited time offer"
+        class="fixed right-6 top-[21%] z-50
+               flex items-center gap-3
+               px-5 py-3 rounded-full
+               bg-gradient-to-r from-indigo-500 to-purple-500
+               shadow-[0_20px_60px_rgba(99,102,241,0.55)]
+               text-sm font-semibold text-white
+               hover:scale-105 transition
+               animate-offerFloat">
+
+  <!-- Tag Icon -->
+  <svg xmlns="http://www.w3.org/2000/svg"
+       viewBox="0 0 24 24"
+       class="w-4 h-4 fill-white">
+    <path d="M21.4 11.6l-9-9c-.4-.4-1-.6-1.6-.6H4c-1.1
+    0-2 .9-2 2v6.8c0 .6.2 1.2.6
+    1.6l9 9c.8.8 2 .8
+    2.8 0l7.4-7.4c.8-.8.8-2
+    0-2.8zM6.5 7C5.7 7
+    5 6.3 5 5.5S5.7
+    4 6.5 4 8 4.7
+    8 5.5 7.3 7
+    6.5 7z"/>
+  </svg>
+
+  <span>
+    🔥 30% OFF
+  </span>
+
+  <!-- Pulse Dot -->
+  <span class="absolute -top-1 -right-1 flex h-3 w-3">
+    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+    <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+  </span>
+</button>
+
+
+
+
+
+    <script>
+        const popup = document.getElementById('offerPopup');
+        const closeBtn = document.getElementById('closePopup');
+
+        // Show popup after delay (once per session)
+        setTimeout(() => {
+            if (!sessionStorage.getItem('offerPopupShown')) {
+                popup.classList.remove('hidden');
+                popup.classList.add('flex');
+                sessionStorage.setItem('offerPopupShown', 'true');
+            }
+        }, 6000);
+
+        // Close popup
+        closeBtn.addEventListener('click', () => {
+            popup.classList.add('hidden');
+            popup.classList.remove('flex');
+        });
+
+        // Close on backdrop click
+        popup.addEventListener('click', (e) => {
+            if (e.target === popup) {
+                popup.classList.add('hidden');
+                popup.classList.remove('flex');
+            }
+        });
+    </script>
+
+   <script>
+  const openOfferBtn = document.getElementById('openOfferPopup');
+
+  openOfferBtn.addEventListener('click', () => {
+    popup.classList.remove('hidden');
+    popup.classList.add('flex');
+  });
+</script>
+
+
+
+
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, duration: 900, easing: 'ease-out-cubic' });
+        lucide.createIcons();
+    </script>
+
+
+    <script>
+        const btn = document.getElementById('menuBtn')
+        const menu = document.getElementById('mobileMenu')
+
+        btn.addEventListener('click', () => {
+            const open = menu.classList.contains('opacity-100')
+
+            menu.classList.toggle('opacity-100', !open)
+            menu.classList.toggle('translate-y-0', !open)
+            menu.classList.toggle('pointer-events-auto', !open)
+
+            menu.classList.toggle('opacity-0', open)
+            menu.classList.toggle('translate-y-4', open)
+            menu.classList.toggle('pointer-events-none', open)
+        })
+    </script>
+
+
+</body>
+
+</html>
